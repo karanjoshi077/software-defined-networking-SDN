@@ -1,0 +1,8 @@
+Part,Test Name,Status,Details
+Part 1,Reactive Controller Initialization & Table-Miss,PASS,Installed priority 0 table-miss; MAC table initialized
+Part 1,Proactive Upfront Rule Pre-population,PASS,Pre-installed 10 rules on s1 and 9 on s2; 0 Packet-Ins
+Part 2,Baseline Dijkstra Shortest Path (Delay Metric),PASS,"Delay cost=30.0ms; Path [1, 2, 3] optimal (30.0ms < 35.0ms)"
+Part 2,Optional Bandwidth Metric Support,PASS,"BW cost=100.0; Path [1, 2, 3] optimal under 100/bw"
+Part 2,Modified Topology Dynamic Path Switching,PASS,"s4-s1 delay reduced from 15ms to 5ms; path flipped to [1, 4, 3] (25.0ms)"
+Part 3,Congestion Telemetry & Route Adaptation (Real Handler),PASS,"Real port_stats_reply_handler escalated cost to 220ms, steered Flow 2 to [1, 4, 3], and restored cost to 20ms"
+Environment,Live Mininet Execution Environment,PASS,Live Mininet + OVS + Ryu runs completed: all six results/*_live.json files are present.

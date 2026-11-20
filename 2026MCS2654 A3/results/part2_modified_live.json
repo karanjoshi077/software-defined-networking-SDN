@@ -1,0 +1,45 @@
+{
+  "part": 2,
+  "topology": "modified",
+  "config_file": "p3_modified.json",
+  "metrics_forward": {
+    "seq_rtts": [
+      60.2,
+      51.5,
+      51.2,
+      51.3,
+      50.8,
+      51.1,
+      50.8,
+      50.9,
+      50.9,
+      51.1
+    ],
+    "first_packet_rtt_ms": 60.2,
+    "steady_state_rtt_ms": 51.06666666666666,
+    "rtt_min_ms": 50.768,
+    "rtt_avg_ms": 51.976,
+    "rtt_max_ms": 60.167,
+    "packet_loss_percent": 0.0
+  },
+  "metrics_reverse": {
+    "seq_rtts": [
+      50.9,
+      51.2,
+      51.2,
+      51.1,
+      50.9
+    ],
+    "first_packet_rtt_ms": 50.9,
+    "steady_state_rtt_ms": 51.1,
+    "rtt_min_ms": 50.873,
+    "rtt_avg_ms": 51.046,
+    "rtt_max_ms": 51.238,
+    "packet_loss_percent": 0.0
+  },
+  "raw_ping_output": "PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.\r\n64 bytes from 10.0.0.3: icmp_seq=1 ttl=64 time=60.2 ms\r\n64 bytes from 10.0.0.3: icmp_seq=2 ttl=64 time=51.5 ms\r\n64 bytes from 10.0.0.3: icmp_seq=3 ttl=64 time=51.2 ms\r\n64 bytes from 10.0.0.3: icmp_seq=4 ttl=64 time=51.3 ms\r\n64 bytes from 10.0.0.3: icmp_seq=5 ttl=64 time=50.8 ms\r\n64 bytes from 10.0.0.3: icmp_seq=6 ttl=64 time=51.1 ms\r\n64 bytes from 10.0.0.3: icmp_seq=7 ttl=64 time=50.8 ms\r\n64 bytes from 10.0.0.3: icmp_seq=8 ttl=64 time=50.9 ms\r\n64 bytes from 10.0.0.3: icmp_seq=9 ttl=64 time=50.9 ms\r\n64 bytes from 10.0.0.3: icmp_seq=10 ttl=64 time=51.1 ms\r\n\r\n--- 10.0.0.3 ping statistics ---\r\n10 packets transmitted, 10 received, 0% packet loss, time 1805ms\r\nrtt min/avg/max/mdev = 50.768/51.976/60.167/2.738 ms\r\n",
+  "controller_selected_path_h1_h3": {
+    "path": "s1 -> s4 -> s3",
+    "cost_ms": 25.0
+  }
+}

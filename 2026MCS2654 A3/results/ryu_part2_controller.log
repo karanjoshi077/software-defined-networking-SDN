@@ -1,0 +1,235 @@
+loading app part2_controller.py
+loading app ryu.controller.ofp_handler
+instantiating app part2_controller.py of Part2MetricController
+Loaded link properties from config file: p3_modified.json
+Part 2 Metric Controller initialized with metric: DELAY
+instantiating app ryu.controller.ofp_handler of OFPHandler
+BRICK Part2MetricController
+  CONSUMES EventOFPPacketIn
+  CONSUMES EventOFPSwitchFeatures
+BRICK ofp_event
+  PROVIDES EventOFPPacketIn TO {'Part2MetricController': {'main'}}
+  PROVIDES EventOFPSwitchFeatures TO {'Part2MetricController': {'config'}}
+  CONSUMES EventOFPEchoReply
+  CONSUMES EventOFPEchoRequest
+  CONSUMES EventOFPErrorMsg
+  CONSUMES EventOFPHello
+  CONSUMES EventOFPPortDescStatsReply
+  CONSUMES EventOFPPortStatus
+  CONSUMES EventOFPSwitchFeatures
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7ca1bd174280> address:('127.0.0.1', 39644)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7ca1bd174a60> address:('127.0.0.1', 39654)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7ca1bd165910> address:('127.0.0.1', 39664)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7ca1bd165cd0> address:('127.0.0.1', 39678)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7ca1bd174d60> address:('127.0.0.1', 39686)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7ca1bd11d0a0> address:('127.0.0.1', 39700)
+hello ev <ryu.controller.ofp_event.EventOFPHello object at 0x7ca1bd11d9a0>
+move onto config mode
+hello ev <ryu.controller.ofp_event.EventOFPHello object at 0x7ca1bd11de80>
+move onto config mode
+hello ev <ryu.controller.ofp_event.EventOFPHello object at 0x7ca1bd128040>
+move onto config mode
+hello ev <ryu.controller.ofp_event.EventOFPHello object at 0x7ca1bd128220>
+move onto config mode
+EVENT ofp_event->Part2MetricController EventOFPSwitchFeatures
+switch features ev version=0x4,msg_type=0x6,msg_len=0x20,xid=0x1c75b4c8,OFPSwitchFeatures(auxiliary_id=0,capabilities=79,datapath_id=1,n_buffers=0,n_tables=254)
+Switch s1 connected and registered.
+EVENT ofp_event->Part2MetricController EventOFPSwitchFeatures
+switch features ev version=0x4,msg_type=0x6,msg_len=0x20,xid=0x9f696628,OFPSwitchFeatures(auxiliary_id=0,capabilities=79,datapath_id=3,n_buffers=0,n_tables=254)
+EVENT ofp_event->Part2MetricController EventOFPSwitchFeatures
+switch features ev version=0x4,msg_type=0x6,msg_len=0x20,xid=0x3471eace,OFPSwitchFeatures(auxiliary_id=0,capabilities=79,datapath_id=2,n_buffers=0,n_tables=254)
+EVENT ofp_event->Part2MetricController EventOFPSwitchFeatures
+switch features ev version=0x4,msg_type=0x6,msg_len=0x20,xid=0xa96d8c96,OFPSwitchFeatures(auxiliary_id=0,capabilities=79,datapath_id=4,n_buffers=0,n_tables=254)
+Switch s3 connected and registered.
+Switch s2 connected and registered.
+Switch s4 connected and registered.
+move onto main mode
+move onto main mode
+move onto main mode
+move onto main mode
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+[ARP RESOLVED] s1 answered ARP for 10.0.0.3 -> 00:00:00:00:00:03 to host on port 1
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+[PATH COMPUTED] Metric: DELAY | 10.0.0.1 (s1) -> 10.0.0.3 (s3) | Selected Path: s1 -> s4 -> s3 | Total Path Cost: 25.00
+  [FORWARD RULE] s1: eth_dst=00:00:00:00:00:03 -> out_port=3
+  [FORWARD RULE] s4: eth_dst=00:00:00:00:00:03 -> out_port=2
+  [FORWARD RULE] s3: eth_dst=00:00:00:00:00:03 -> out_port=1
+  [REVERSE RULE] s3: eth_dst=00:00:00:00:00:01 -> out_port=3
+  [REVERSE RULE] s4: eth_dst=00:00:00:00:00:01 -> out_port=3
+  [REVERSE RULE] s1: eth_dst=00:00:00:00:00:01 -> out_port=1
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+[ARP RESOLVED] s3 answered ARP for 10.0.0.1 -> 00:00:00:00:00:01 to host on port 1
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
+EVENT ofp_event->Part2MetricController EventOFPPacketIn
