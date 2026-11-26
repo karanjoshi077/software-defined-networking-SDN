@@ -1,0 +1,3 @@
+ cookie=0x0, duration=2.761s, table=0, n_packets=13, n_bytes=1274, idle_timeout=120, priority=10,dl_dst=00:00:00:00:00:03 actions=output:"s2-eth3"
+ cookie=0x0, duration=2.761s, table=0, n_packets=14, n_bytes=1372, idle_timeout=120, priority=10,dl_dst=00:00:00:00:00:01 actions=output:"s2-eth2"
+ cookie=0x0, duration=9.255s, table=0, n_packets=47, n_bytes=10086, priority=0 actions=CONTROLLER:65535

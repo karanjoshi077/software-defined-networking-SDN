@@ -1,0 +1,46 @@
+{
+  "part": 3,
+  "mode": "dynamic",
+  "traffic_scenario": "Flow 1: h1->h2 (1.6M UDP, t=0..25s) | Flow 2: h1->h3 (0.8M UDP, t=6..21s)",
+  "flow1": {
+    "bandwidth_mbps": 1.68,
+    "jitter_ms": 0.106,
+    "lost_packets": 0,
+    "total_packets": 3569,
+    "packet_loss_percent": 0.0,
+    "report_found": true
+  },
+  "flow2": {
+    "bandwidth_mbps": 0.84,
+    "jitter_ms": 0.115,
+    "lost_packets": 0,
+    "total_packets": 1072,
+    "packet_loss_percent": 0.0,
+    "report_found": true
+  },
+  "aggregate_throughput_mbps": 2.52,
+  "routing_decisions": [
+    {
+      "flow": "10.0.0.1 -> 10.0.0.2 (UDP dst_port=5001)",
+      "path": "s1 -> s2",
+      "cost_ms": 20.0
+    },
+    {
+      "flow": "10.0.0.1 -> 10.0.0.3 (UDP dst_port=5002)",
+      "path": "s1 -> s4 -> s3",
+      "cost_ms": 35.0
+    },
+    {
+      "flow": "10.0.0.1 -> 10.0.0.3",
+      "path": "s1 -> s2 -> s3",
+      "cost_ms": 230.0
+    },
+    {
+      "flow": "10.0.0.1 -> 10.0.0.2",
+      "path": "s1 -> s4 -> s3 -> s2",
+      "cost_ms": 45.0
+    }
+  ],
+  "congestion_detected_in_log": true,
+  "aggregate_loss_percent": 0.0
+}

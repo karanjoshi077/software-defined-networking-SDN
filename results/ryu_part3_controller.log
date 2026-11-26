@@ -1,0 +1,554 @@
+loading app part3_controller.py
+loading app ryu.controller.ofp_handler
+instantiating app part3_controller.py of Part3CongestionAwareController
+Loaded base link properties from config file: p3_baseline.json
+Part 3 Congestion-Aware Controller initialized in 'DYNAMIC' mode (Threshold: 70%, Interval: 2s)
+instantiating app ryu.controller.ofp_handler of OFPHandler
+BRICK Part3CongestionAwareController
+  CONSUMES EventOFPPacketIn
+  CONSUMES EventOFPPortStatsReply
+  CONSUMES EventOFPSwitchFeatures
+BRICK ofp_event
+  PROVIDES EventOFPPacketIn TO {'Part3CongestionAwareController': {'main'}}
+  PROVIDES EventOFPPortStatsReply TO {'Part3CongestionAwareController': {'main'}}
+  PROVIDES EventOFPSwitchFeatures TO {'Part3CongestionAwareController': {'config'}}
+  CONSUMES EventOFPEchoReply
+  CONSUMES EventOFPEchoRequest
+  CONSUMES EventOFPErrorMsg
+  CONSUMES EventOFPHello
+  CONSUMES EventOFPPortDescStatsReply
+  CONSUMES EventOFPPortStatus
+  CONSUMES EventOFPSwitchFeatures
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7a6958813940> address:('127.0.0.1', 38672)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7a6958805c70> address:('127.0.0.1', 54758)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7a6958805c10> address:('127.0.0.1', 54764)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7a6958809b20> address:('127.0.0.1', 54772)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7a6958813e50> address:('127.0.0.1', 54786)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x7a69587bc580> address:('127.0.0.1', 54792)
+hello ev <ryu.controller.ofp_event.EventOFPHello object at 0x7a69587c4130>
+move onto config mode
+hello ev <ryu.controller.ofp_event.EventOFPHello object at 0x7a69587c4490>
+move onto config mode
+hello ev <ryu.controller.ofp_event.EventOFPHello object at 0x7a69587c4610>
+move onto config mode
+hello ev <ryu.controller.ofp_event.EventOFPHello object at 0x7a69587c47f0>
+move onto config mode
+EVENT ofp_event->Part3CongestionAwareController EventOFPSwitchFeatures
+switch features ev version=0x4,msg_type=0x6,msg_len=0x20,xid=0x3674cd6d,OFPSwitchFeatures(auxiliary_id=0,capabilities=79,datapath_id=1,n_buffers=0,n_tables=254)
+Switch s1 connected to Part 3 controller.
+EVENT ofp_event->Part3CongestionAwareController EventOFPSwitchFeatures
+switch features ev version=0x4,msg_type=0x6,msg_len=0x20,xid=0x22f9cd81,OFPSwitchFeatures(auxiliary_id=0,capabilities=79,datapath_id=3,n_buffers=0,n_tables=254)
+EVENT ofp_event->Part3CongestionAwareController EventOFPSwitchFeatures
+switch features ev version=0x4,msg_type=0x6,msg_len=0x20,xid=0x94e44eda,OFPSwitchFeatures(auxiliary_id=0,capabilities=79,datapath_id=2,n_buffers=0,n_tables=254)
+EVENT ofp_event->Part3CongestionAwareController EventOFPSwitchFeatures
+switch features ev version=0x4,msg_type=0x6,msg_len=0x20,xid=0x18a8e59f,OFPSwitchFeatures(auxiliary_id=0,capabilities=79,datapath_id=4,n_buffers=0,n_tables=254)
+Switch s3 connected to Part 3 controller.
+Switch s2 connected to Part 3 controller.
+Switch s4 connected to Part 3 controller.
+move onto main mode
+move onto main mode
+move onto main mode
+move onto main mode
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386516.019 link=s1-s2 rate_mbps=0.007 util_pct=0.3 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386516.019 link=s1-s4 rate_mbps=0.005 util_pct=0.5 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386516.020 link=s3-s2 rate_mbps=0.007 util_pct=0.4 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386516.020 link=s3-s4 rate_mbps=0.007 util_pct=0.7 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386516.020 link=s2-s1 rate_mbps=0.007 util_pct=0.3 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386516.020 link=s2-s3 rate_mbps=0.007 util_pct=0.4 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386516.020 link=s4-s3 rate_mbps=0.007 util_pct=0.7 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386516.020 link=s4-s1 rate_mbps=0.005 util_pct=0.5 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386518.023 link=s1-s2 rate_mbps=0.004 util_pct=0.2 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386518.023 link=s1-s4 rate_mbps=0.005 util_pct=0.5 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386518.024 link=s3-s2 rate_mbps=0.007 util_pct=0.3 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386518.024 link=s3-s4 rate_mbps=0.007 util_pct=0.7 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386518.024 link=s4-s3 rate_mbps=0.002 util_pct=0.2 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386518.024 link=s4-s1 rate_mbps=0.004 util_pct=0.4 cost_ms=15.0 mode=dynamic
+[TELEMETRY] t=1794386518.024 link=s2-s1 rate_mbps=0.005 util_pct=0.2 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386518.024 link=s2-s3 rate_mbps=0.002 util_pct=0.1 cost_ms=10.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386520.023 link=s1-s2 rate_mbps=0.005 util_pct=0.2 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386520.023 link=s1-s4 rate_mbps=0.004 util_pct=0.4 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386520.024 link=s2-s1 rate_mbps=0.002 util_pct=0.1 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386520.024 link=s2-s3 rate_mbps=0.002 util_pct=0.1 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386520.024 link=s4-s3 rate_mbps=0.003 util_pct=0.3 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386520.024 link=s4-s1 rate_mbps=0.002 util_pct=0.2 cost_ms=15.0 mode=dynamic
+[TELEMETRY] t=1794386520.024 link=s3-s2 rate_mbps=0.002 util_pct=0.1 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386520.024 link=s3-s4 rate_mbps=0.003 util_pct=0.3 cost_ms=20.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+[NEW FLOW ROUTED] [DYNAMIC MODE] Flow: 10.0.0.1 -> 10.0.0.2 (UDP dst_port=5001) | Selected Path: s1 -> s2 | Dynamic Cost: 20.00
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386522.023 link=s1-s2 rate_mbps=0.532 util_pct=26.6 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386522.023 link=s1-s4 rate_mbps=0.002 util_pct=0.2 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386522.024 link=s3-s2 rate_mbps=0.002 util_pct=0.1 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386522.024 link=s3-s4 rate_mbps=0.003 util_pct=0.3 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386522.024 link=s4-s3 rate_mbps=0.003 util_pct=0.3 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386522.024 link=s4-s1 rate_mbps=0.000 util_pct=0.0 cost_ms=15.0 mode=dynamic
+[TELEMETRY] t=1794386522.025 link=s2-s1 rate_mbps=0.532 util_pct=26.6 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386522.025 link=s2-s3 rate_mbps=0.000 util_pct=0.0 cost_ms=10.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386524.025 link=s1-s2 rate_mbps=1.729 util_pct=86.5 cost_ms=20.0 mode=dynamic
+[CONGESTION DETECTED] Link (s1 <-> s2): Rate=1.73 Mbps (86.5% of 2.0 Mbps). Threshold 70% exceeded! Dynamic cost escalated: 20.0 -> 220.0
+[TELEMETRY] t=1794386524.025 link=s1-s4 rate_mbps=0.001 util_pct=0.1 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386524.026 link=s3-s2 rate_mbps=0.005 util_pct=0.2 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386524.026 link=s3-s4 rate_mbps=0.003 util_pct=0.3 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386524.026 link=s4-s3 rate_mbps=0.001 util_pct=0.1 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386524.026 link=s4-s1 rate_mbps=0.001 util_pct=0.1 cost_ms=15.0 mode=dynamic
+[TELEMETRY] t=1794386524.026 link=s2-s1 rate_mbps=1.729 util_pct=86.5 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386524.026 link=s2-s3 rate_mbps=0.005 util_pct=0.2 cost_ms=10.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386526.028 link=s1-s2 rate_mbps=1.727 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386526.028 link=s1-s4 rate_mbps=0.001 util_pct=0.1 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386526.029 link=s2-s1 rate_mbps=1.727 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386526.029 link=s2-s3 rate_mbps=0.005 util_pct=0.2 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386526.029 link=s4-s3 rate_mbps=0.003 util_pct=0.3 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386526.029 link=s4-s1 rate_mbps=0.000 util_pct=0.0 cost_ms=15.0 mode=dynamic
+[TELEMETRY] t=1794386526.029 link=s3-s2 rate_mbps=0.003 util_pct=0.2 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386526.029 link=s3-s4 rate_mbps=0.003 util_pct=0.3 cost_ms=20.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+[NEW FLOW ROUTED] [DYNAMIC MODE] Flow: 10.0.0.1 -> 10.0.0.3 (UDP dst_port=5002) | Selected Path: s1 -> s4 -> s3 | Dynamic Cost: 35.00
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386528.029 link=s1-s2 rate_mbps=1.727 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386528.029 link=s1-s4 rate_mbps=0.272 util_pct=27.2 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386528.029 link=s4-s3 rate_mbps=0.267 util_pct=26.7 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386528.029 link=s4-s1 rate_mbps=0.272 util_pct=27.2 cost_ms=15.0 mode=dynamic
+[TELEMETRY] t=1794386528.029 link=s3-s2 rate_mbps=0.007 util_pct=0.3 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386528.029 link=s3-s4 rate_mbps=0.267 util_pct=26.7 cost_ms=20.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386528.030 link=s2-s1 rate_mbps=1.727 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386528.030 link=s2-s3 rate_mbps=0.007 util_pct=0.4 cost_ms=10.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386530.030 link=s1-s2 rate_mbps=1.732 util_pct=86.6 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386530.030 link=s1-s4 rate_mbps=0.865 util_pct=86.5 cost_ms=15.0 mode=dynamic
+[CONGESTION DETECTED] Link (s1 <-> s4): Rate=0.87 Mbps (86.5% of 1.0 Mbps). Threshold 70% exceeded! Dynamic cost escalated: 15.0 -> 215.0
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386530.032 link=s2-s1 rate_mbps=1.732 util_pct=86.6 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386530.032 link=s2-s3 rate_mbps=0.007 util_pct=0.3 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386530.032 link=s4-s3 rate_mbps=0.871 util_pct=87.1 cost_ms=20.0 mode=dynamic
+[CONGESTION DETECTED] Link (s4 <-> s3): Rate=0.87 Mbps (87.1% of 1.0 Mbps). Threshold 70% exceeded! Dynamic cost escalated: 20.0 -> 220.0
+[TELEMETRY] t=1794386530.032 link=s4-s1 rate_mbps=0.865 util_pct=86.5 cost_ms=215.0 mode=dynamic
+[TELEMETRY] t=1794386530.032 link=s3-s2 rate_mbps=0.007 util_pct=0.4 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386530.032 link=s3-s4 rate_mbps=0.871 util_pct=87.1 cost_ms=220.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386532.032 link=s1-s2 rate_mbps=1.723 util_pct=86.2 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386532.032 link=s1-s4 rate_mbps=0.859 util_pct=85.9 cost_ms=215.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386532.033 link=s2-s1 rate_mbps=1.723 util_pct=86.2 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386532.033 link=s2-s3 rate_mbps=0.007 util_pct=0.4 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386532.033 link=s4-s3 rate_mbps=0.865 util_pct=86.5 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386532.033 link=s4-s1 rate_mbps=0.859 util_pct=85.9 cost_ms=215.0 mode=dynamic
+[TELEMETRY] t=1794386532.033 link=s3-s2 rate_mbps=0.001 util_pct=0.0 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386532.033 link=s3-s4 rate_mbps=0.865 util_pct=86.5 cost_ms=220.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386534.034 link=s1-s2 rate_mbps=1.728 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386534.034 link=s1-s4 rate_mbps=0.868 util_pct=86.8 cost_ms=215.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386534.035 link=s4-s3 rate_mbps=0.864 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386534.035 link=s4-s1 rate_mbps=0.868 util_pct=86.8 cost_ms=215.0 mode=dynamic
+[TELEMETRY] t=1794386534.035 link=s3-s2 rate_mbps=0.001 util_pct=0.0 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386534.035 link=s3-s4 rate_mbps=0.864 util_pct=86.4 cost_ms=220.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386534.035 link=s2-s1 rate_mbps=1.728 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386534.035 link=s2-s3 rate_mbps=0.000 util_pct=0.0 cost_ms=10.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386536.036 link=s1-s2 rate_mbps=1.726 util_pct=86.3 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386536.036 link=s1-s4 rate_mbps=0.864 util_pct=86.4 cost_ms=215.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386536.037 link=s4-s3 rate_mbps=0.867 util_pct=86.7 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386536.037 link=s4-s1 rate_mbps=0.864 util_pct=86.4 cost_ms=215.0 mode=dynamic
+[TELEMETRY] t=1794386536.037 link=s2-s1 rate_mbps=1.726 util_pct=86.3 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386536.037 link=s2-s3 rate_mbps=0.007 util_pct=0.3 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386536.037 link=s3-s2 rate_mbps=0.007 util_pct=0.3 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386536.037 link=s3-s4 rate_mbps=0.867 util_pct=86.7 cost_ms=220.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386538.037 link=s1-s2 rate_mbps=1.732 util_pct=86.6 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386538.037 link=s1-s4 rate_mbps=0.871 util_pct=87.1 cost_ms=215.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386538.038 link=s3-s2 rate_mbps=0.007 util_pct=0.3 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386538.038 link=s3-s4 rate_mbps=0.867 util_pct=86.7 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386538.038 link=s4-s3 rate_mbps=0.862 util_pct=86.2 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386538.038 link=s4-s1 rate_mbps=0.871 util_pct=87.1 cost_ms=215.0 mode=dynamic
+[TELEMETRY] t=1794386538.038 link=s2-s1 rate_mbps=1.732 util_pct=86.6 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386538.038 link=s2-s3 rate_mbps=0.003 util_pct=0.2 cost_ms=10.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386540.039 link=s1-s2 rate_mbps=1.728 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386540.039 link=s1-s4 rate_mbps=0.867 util_pct=86.7 cost_ms=215.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386540.040 link=s2-s1 rate_mbps=1.728 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386540.040 link=s2-s3 rate_mbps=0.003 util_pct=0.2 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386540.040 link=s3-s2 rate_mbps=0.000 util_pct=0.0 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386540.040 link=s3-s4 rate_mbps=0.862 util_pct=86.2 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386540.040 link=s4-s3 rate_mbps=0.864 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386540.040 link=s4-s1 rate_mbps=0.867 util_pct=86.7 cost_ms=215.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386542.041 link=s1-s2 rate_mbps=1.722 util_pct=86.1 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386542.041 link=s1-s4 rate_mbps=0.858 util_pct=85.8 cost_ms=215.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386542.042 link=s3-s2 rate_mbps=0.000 util_pct=0.0 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386542.042 link=s3-s4 rate_mbps=0.864 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386542.042 link=s4-s3 rate_mbps=0.864 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386542.042 link=s4-s1 rate_mbps=0.858 util_pct=85.8 cost_ms=215.0 mode=dynamic
+[TELEMETRY] t=1794386542.042 link=s2-s1 rate_mbps=1.722 util_pct=86.1 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386542.042 link=s2-s3 rate_mbps=0.000 util_pct=0.0 cost_ms=10.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+[NEW FLOW ROUTED] [DYNAMIC MODE] Flow: 10.0.0.1 -> 10.0.0.3 | Selected Path: s1 -> s2 -> s3 | Dynamic Cost: 230.00
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386544.042 link=s1-s2 rate_mbps=1.734 util_pct=86.7 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386544.042 link=s1-s4 rate_mbps=0.206 util_pct=20.6 cost_ms=215.0 mode=dynamic
+[CONGESTION CLEARED] Link (s1 <-> s4): Rate=0.21 Mbps (20.6%). Cost restored to base: 15.0
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386544.043 link=s3-s2 rate_mbps=0.000 util_pct=0.0 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386544.043 link=s3-s4 rate_mbps=0.864 util_pct=86.4 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386544.043 link=s2-s1 rate_mbps=1.734 util_pct=86.7 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386544.043 link=s2-s3 rate_mbps=0.005 util_pct=0.2 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386544.043 link=s4-s3 rate_mbps=0.212 util_pct=21.2 cost_ms=220.0 mode=dynamic
+[CONGESTION CLEARED] Link (s4 <-> s3): Rate=0.21 Mbps (21.2%). Cost restored to base: 20.0
+[TELEMETRY] t=1794386544.043 link=s4-s1 rate_mbps=0.206 util_pct=20.6 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386546.043 link=s1-s2 rate_mbps=1.723 util_pct=86.1 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386546.043 link=s1-s4 rate_mbps=0.005 util_pct=0.5 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386546.044 link=s3-s2 rate_mbps=0.005 util_pct=0.2 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386546.044 link=s3-s4 rate_mbps=0.212 util_pct=21.2 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386546.044 link=s2-s1 rate_mbps=1.723 util_pct=86.1 cost_ms=220.0 mode=dynamic
+[TELEMETRY] t=1794386546.044 link=s2-s3 rate_mbps=0.000 util_pct=0.0 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386546.044 link=s4-s3 rate_mbps=0.000 util_pct=0.0 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386546.044 link=s4-s1 rate_mbps=0.000 util_pct=0.0 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+[NEW FLOW ROUTED] [DYNAMIC MODE] Flow: 10.0.0.1 -> 10.0.0.2 | Selected Path: s1 -> s4 -> s3 -> s2 | Dynamic Cost: 45.00
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPacketIn
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386548.044 link=s1-s2 rate_mbps=0.345 util_pct=17.3 cost_ms=220.0 mode=dynamic
+[CONGESTION CLEARED] Link (s1 <-> s2): Rate=0.35 Mbps (17.3%). Cost restored to base: 20.0
+[TELEMETRY] t=1794386548.044 link=s1-s4 rate_mbps=0.003 util_pct=0.3 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386548.045 link=s3-s2 rate_mbps=0.003 util_pct=0.2 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386548.045 link=s3-s4 rate_mbps=0.001 util_pct=0.1 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386548.045 link=s2-s1 rate_mbps=0.345 util_pct=17.3 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386548.045 link=s2-s3 rate_mbps=0.003 util_pct=0.2 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386548.046 link=s4-s3 rate_mbps=0.003 util_pct=0.3 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386548.046 link=s4-s1 rate_mbps=0.003 util_pct=0.3 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386550.046 link=s1-s2 rate_mbps=0.004 util_pct=0.2 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386550.046 link=s1-s4 rate_mbps=0.001 util_pct=0.1 cost_ms=15.0 mode=dynamic
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+EVENT ofp_event->Part3CongestionAwareController EventOFPPortStatsReply
+[TELEMETRY] t=1794386550.047 link=s2-s1 rate_mbps=0.000 util_pct=0.0 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386550.047 link=s2-s3 rate_mbps=0.003 util_pct=0.2 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386550.047 link=s4-s3 rate_mbps=0.001 util_pct=0.1 cost_ms=20.0 mode=dynamic
+[TELEMETRY] t=1794386550.047 link=s4-s1 rate_mbps=0.000 util_pct=0.0 cost_ms=15.0 mode=dynamic
+[TELEMETRY] t=1794386550.047 link=s3-s2 rate_mbps=0.000 util_pct=0.0 cost_ms=10.0 mode=dynamic
+[TELEMETRY] t=1794386550.047 link=s3-s4 rate_mbps=0.000 util_pct=0.0 cost_ms=20.0 mode=dynamic

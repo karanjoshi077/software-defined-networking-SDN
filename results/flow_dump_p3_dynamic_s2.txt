@@ -1,0 +1,7 @@
+ cookie=0x0, duration=29.150s, table=0, n_packets=3572, n_bytes=5400864, idle_timeout=30, priority=20,udp,nw_src=10.0.0.1,nw_dst=10.0.0.2,tp_src=54138,tp_dst=5001 actions=output:"s2-eth1"
+ cookie=0x0, duration=29.150s, table=0, n_packets=4, n_bytes=680, idle_timeout=30, priority=20,udp,nw_src=10.0.0.2,nw_dst=10.0.0.1,tp_src=5001,tp_dst=54138 actions=output:"s2-eth2"
+ cookie=0x0, duration=8.036s, table=0, n_packets=6, n_bytes=1188, idle_timeout=30, priority=10,ip,nw_src=10.0.0.1,nw_dst=10.0.0.3 actions=output:"s2-eth3"
+ cookie=0x0, duration=8.036s, table=0, n_packets=0, n_bytes=0, idle_timeout=30, priority=10,ip,nw_src=10.0.0.3,nw_dst=10.0.0.1 actions=output:"s2-eth2"
+ cookie=0x0, duration=4.074s, table=0, n_packets=3, n_bytes=594, idle_timeout=30, priority=10,ip,nw_src=10.0.0.1,nw_dst=10.0.0.2 actions=output:"s2-eth1"
+ cookie=0x0, duration=4.074s, table=0, n_packets=0, n_bytes=0, idle_timeout=30, priority=10,ip,nw_src=10.0.0.2,nw_dst=10.0.0.1 actions=output:"s2-eth3"
+ cookie=0x0, duration=36.655s, table=0, n_packets=69, n_bytes=18534, priority=0 actions=CONTROLLER:65535

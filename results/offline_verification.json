@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "timestamp": "2026-11-12 22:39:34",
+    "execution_mode": "Offline Algorithmic Logic Verification"
+  },
+  "tests": [
+    {
+      "Part": "Part 1",
+      "Test Name": "Reactive Controller Initialization & Table-Miss",
+      "Status": "PASS",
+      "Details": "Installed priority 0 table-miss; MAC table initialized"
+    },
+    {
+      "Part": "Part 1",
+      "Test Name": "Proactive Upfront Rule Pre-population",
+      "Status": "PASS",
+      "Details": "Pre-installed 10 rules on s1 and 9 on s2; 0 Packet-Ins"
+    },
+    {
+      "Part": "Part 2",
+      "Test Name": "Baseline Dijkstra Shortest Path (Delay Metric)",
+      "Status": "PASS",
+      "Details": "Delay cost=30.0ms; Path [1, 2, 3] optimal (30.0ms < 35.0ms)"
+    },
+    {
+      "Part": "Part 2",
+      "Test Name": "Optional Bandwidth Metric Support",
+      "Status": "PASS",
+      "Details": "BW cost=100.0; Path [1, 2, 3] optimal under 100/bw"
+    },
+    {
+      "Part": "Part 2",
+      "Test Name": "Modified Topology Dynamic Path Switching",
+      "Status": "PASS",
+      "Details": "s4-s1 delay reduced from 15ms to 5ms; path flipped to [1, 4, 3] (25.0ms)"
+    },
+    {
+      "Part": "Part 3",
+      "Test Name": "Congestion Telemetry & Route Adaptation (Real Handler)",
+      "Status": "PASS",
+      "Details": "Real port_stats_reply_handler escalated cost to 220ms, steered Flow 2 to [1, 4, 3], and restored cost to 20ms"
+    },
+    {
+      "Part": "Environment",
+      "Test Name": "Live Mininet Execution Environment",
+      "Status": "PASS",
+      "Details": "Live Mininet + OVS + Ryu runs completed: all six results/*_live.json files are present."
+    }
+  ],
+  "algorithmic_results": {
+    "part1": {
+      "proactive_s1_installed_rules": 10,
+      "proactive_s2_installed_rules": 9,
+      "note": "Packet-In counts and RTTs are NOT modelled here; they are measured live (results/part1_*_live.json)."
+    },
+    "part2": {
+      "baseline_delay_path_h1_h3": [
+        1,
+        2,
+        3
+      ],
+      "baseline_delay_cost_ms": 30.0,
+      "baseline_bw_cost": 100.0,
+      "baseline_theoretical_propagation_rtt_ms": 60.0,
+      "modified_delay_path_h1_h3": [
+        1,
+        4,
+        3
+      ],
+      "modified_delay_cost_ms": 25.0,
+      "modified_theoretical_propagation_rtt_ms": 50.0,
+      "theoretical_rtt_delta_ms": 10.0
+    },
+    "part3": {
+      "traffic_scenario": "Flow 1: h1 -> h2 (1.6M UDP, t=0..25s) | Flow 2: h1 -> h3 (0.8M UDP, t=6..21s)",
+      "contended_static_link": "s1-s2 (Capacity: 2.0 Mbps, Static Load: 2.4 Mbps)",
+      "static_flow1_path": [
+        1,
+        2
+      ],
+      "static_flow2_path": [
+        1,
+        2,
+        3
+      ],
+      "telemetry_interval_sec": 2,
+      "congestion_threshold_ratio": 0.7,
+      "detected_utilization": 0.8,
+      "dynamic_penalized_cost_s1_s2": 20.0,
+      "dynamic_flow2_path": [
+        1,
+        4,
+        3
+      ],
+      "dynamic_flow2_cost": 35.0,
+      "capacity_model": {
+        "static_offered_load_mbps": 2.4,
+        "static_bottleneck_capacity_mbps": 2.0,
+        "static_theoretical_served_mbps": 2.0,
+        "static_theoretical_drop_percent": 16.7,
+        "dynamic_flow1_served_mbps": 1.6,
+        "dynamic_flow2_served_mbps": 0.8,
+        "dynamic_total_served_mbps": 2.4,
+        "dynamic_theoretical_drop_percent": 0.0
+      }
+    }
+  }
+}

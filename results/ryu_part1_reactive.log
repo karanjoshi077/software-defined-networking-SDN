@@ -1,0 +1,256 @@
+loading app part1_reactive.py
+loading app ryu.controller.ofp_handler
+instantiating app part1_reactive.py of Part1ReactiveController
+Part 1 Reactive Flow Management Controller initialized.
+instantiating app ryu.controller.ofp_handler of OFPHandler
+BRICK Part1ReactiveController
+  CONSUMES EventOFPPacketIn
+  CONSUMES EventOFPSwitchFeatures
+BRICK ofp_event
+  PROVIDES EventOFPPacketIn TO {'Part1ReactiveController': {'main'}}
+  PROVIDES EventOFPSwitchFeatures TO {'Part1ReactiveController': {'config'}}
+  CONSUMES EventOFPEchoReply
+  CONSUMES EventOFPEchoRequest
+  CONSUMES EventOFPErrorMsg
+  CONSUMES EventOFPHello
+  CONSUMES EventOFPPortDescStatsReply
+  CONSUMES EventOFPPortStatus
+  CONSUMES EventOFPSwitchFeatures
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x79483efaa190> address:('127.0.0.1', 50556)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x79483efaa9d0> address:('127.0.0.1', 50562)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x79483efaab20> address:('127.0.0.1', 50568)
+connected socket:<eventlet.greenio.base.GreenSocket object at 0x79483efaaf40> address:('127.0.0.1', 50584)
+hello ev <ryu.controller.ofp_event.EventOFPHello object at 0x79483ef9fdc0>
+move onto config mode
+hello ev <ryu.controller.ofp_event.EventOFPHello object at 0x79483efcb0d0>
+move onto config mode
+EVENT ofp_event->Part1ReactiveController EventOFPSwitchFeatures
+switch features ev version=0x4,msg_type=0x6,msg_len=0x20,xid=0x307e30a1,OFPSwitchFeatures(auxiliary_id=0,capabilities=79,datapath_id=1,n_buffers=0,n_tables=254)
+Switch s1 connected. Installed table-miss entry.
+EVENT ofp_event->Part1ReactiveController EventOFPSwitchFeatures
+switch features ev version=0x4,msg_type=0x6,msg_len=0x20,xid=0x325c7bce,OFPSwitchFeatures(auxiliary_id=0,capabilities=79,datapath_id=2,n_buffers=0,n_tables=254)
+Switch s2 connected. Installed table-miss entry.
+move onto main mode
+move onto main mode
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=1 src=00:00:00:00:00:01 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s1: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:01 on in_port=1
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:01 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s2: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:01 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=1 src=00:00:00:00:00:04 dst=00:00:00:00:00:01 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s2: in_port=1 eth_dst=00:00:00:00:00:01 -> out_port=3 (Total Packet-Ins=3)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=4 src=00:00:00:00:00:04 dst=00:00:00:00:00:01 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s1: in_port=4 eth_dst=00:00:00:00:00:01 -> out_port=1 (Total Packet-Ins=4)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=1 src=00:00:00:00:00:01 dst=00:00:00:00:00:04 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s1: in_port=1 eth_dst=00:00:00:00:00:04 -> out_port=4 (Total Packet-Ins=5)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:01 dst=00:00:00:00:00:04 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s2: in_port=3 eth_dst=00:00:00:00:00:04 -> out_port=1 (Total Packet-Ins=6)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=2 src=00:00:00:00:00:02 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s1: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:02 on in_port=2
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:02 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s2: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:02 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=2 src=00:00:00:00:00:05 dst=00:00:00:00:00:02 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s2: in_port=2 eth_dst=00:00:00:00:00:02 -> out_port=3 (Total Packet-Ins=9)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=4 src=00:00:00:00:00:05 dst=00:00:00:00:00:02 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s1: in_port=4 eth_dst=00:00:00:00:00:02 -> out_port=2 (Total Packet-Ins=10)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=2 src=00:00:00:00:00:02 dst=00:00:00:00:00:05 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s1: in_port=2 eth_dst=00:00:00:00:00:05 -> out_port=4 (Total Packet-Ins=11)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:02 dst=00:00:00:00:00:05 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s2: in_port=3 eth_dst=00:00:00:00:00:05 -> out_port=2 (Total Packet-Ins=12)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=3 src=00:00:00:00:00:03 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s1: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:03 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:03 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s2: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:03 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=1 src=00:00:00:00:00:04 dst=00:00:00:00:00:03 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s2: in_port=1 eth_dst=00:00:00:00:00:03 -> out_port=3 (Total Packet-Ins=15)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=4 src=00:00:00:00:00:04 dst=00:00:00:00:00:03 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s1: in_port=4 eth_dst=00:00:00:00:00:03 -> out_port=3 (Total Packet-Ins=16)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=3 src=00:00:00:00:00:03 dst=00:00:00:00:00:04 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s1: in_port=3 eth_dst=00:00:00:00:00:04 -> out_port=4 (Total Packet-Ins=17)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=1 src=00:00:00:00:00:01 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s1: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:01 on in_port=1
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=2 src=00:00:00:00:00:02 dst=00:00:00:00:00:01 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s1: in_port=2 eth_dst=00:00:00:00:00:01 -> out_port=1 (Total Packet-Ins=19)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=1 src=00:00:00:00:00:01 dst=00:00:00:00:00:02 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s1: in_port=1 eth_dst=00:00:00:00:00:02 -> out_port=2 (Total Packet-Ins=20)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:01 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s2: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:01 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=1 src=00:00:00:00:00:04 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s2: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:04 on in_port=1
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=2 src=00:00:00:00:00:05 dst=00:00:00:00:00:04 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s2: in_port=2 eth_dst=00:00:00:00:00:04 -> out_port=1 (Total Packet-Ins=23)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=1 src=00:00:00:00:00:04 dst=00:00:00:00:00:05 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s2: in_port=1 eth_dst=00:00:00:00:00:05 -> out_port=2 (Total Packet-Ins=24)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=4 src=00:00:00:00:00:04 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s1: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:04 on in_port=4
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=2 src=00:00:00:00:00:02 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s1: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:02 on in_port=2
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=3 src=00:00:00:00:00:03 dst=00:00:00:00:00:02 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s1: in_port=3 eth_dst=00:00:00:00:00:02 -> out_port=2 (Total Packet-Ins=27)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=2 src=00:00:00:00:00:02 dst=00:00:00:00:00:03 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s1: in_port=2 eth_dst=00:00:00:00:00:03 -> out_port=3 (Total Packet-Ins=28)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:02 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s2: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:02 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=1 src=00:00:00:00:00:01 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s1: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:01 on in_port=1
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:01 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s2: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:01 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=2 src=00:00:00:00:00:05 dst=00:00:00:00:00:01 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s2: in_port=2 eth_dst=00:00:00:00:00:01 -> out_port=3 (Total Packet-Ins=32)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=1 src=00:00:00:00:00:01 dst=00:00:00:00:00:05 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s1: in_port=1 eth_dst=00:00:00:00:00:05 -> out_port=4 (Total Packet-Ins=33)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=2 src=00:00:00:00:00:02 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s1: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:02 on in_port=2
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:02 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s2: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:02 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=1 src=00:00:00:00:00:04 dst=00:00:00:00:00:02 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s2: in_port=1 eth_dst=00:00:00:00:00:02 -> out_port=3 (Total Packet-Ins=36)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=2 src=00:00:00:00:00:02 dst=00:00:00:00:00:04 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s1: in_port=2 eth_dst=00:00:00:00:00:04 -> out_port=4 (Total Packet-Ins=37)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=3 src=00:00:00:00:00:03 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s1: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:03 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:03 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s2: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:03 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=2 src=00:00:00:00:00:05 dst=00:00:00:00:00:03 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s2: in_port=2 eth_dst=00:00:00:00:00:03 -> out_port=3 (Total Packet-Ins=40)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=3 src=00:00:00:00:00:03 dst=00:00:00:00:00:05 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s1: in_port=3 eth_dst=00:00:00:00:00:05 -> out_port=4 (Total Packet-Ins=41)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=1 src=00:00:00:00:00:01 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s1: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:01 on in_port=1
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=3 src=00:00:00:00:00:03 dst=00:00:00:00:00:01 ethertype=0x0806
+[REACTIVE FLOW INSTALLED] s1: in_port=3 eth_dst=00:00:00:00:00:01 -> out_port=1 (Total Packet-Ins=43)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s1 in_port=1 src=00:00:00:00:00:01 dst=00:00:00:00:00:03 ethertype=0x0800
+[REACTIVE FLOW INSTALLED] s1: in_port=1 eth_dst=00:00:00:00:00:03 -> out_port=3 (Total Packet-Ins=44)
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+[USER PACKET-IN] s2 in_port=3 src=00:00:00:00:00:01 dst=ff:ff:ff:ff:ff:ff ethertype=0x0806
+[FLOOD] s2: unknown dst=ff:ff:ff:ff:ff:ff, flooding packet from src=00:00:00:00:00:01 on in_port=3
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn
+EVENT ofp_event->Part1ReactiveController EventOFPPacketIn

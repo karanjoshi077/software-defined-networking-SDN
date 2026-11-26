@@ -1,0 +1,9 @@
+{
+  "topology": "baseline",
+  "links": {
+    "s1-s2": {"bw": 2.0, "delay": 20.0},
+    "s2-s3": {"bw": 2.0, "delay": 10.0},
+    "s3-s4": {"bw": 1.0, "delay": 20.0},
+    "s4-s1": {"bw": 1.0, "delay": 15.0}
+  }
+}

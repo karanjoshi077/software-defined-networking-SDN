@@ -1,0 +1,68 @@
+{
+  "part": 1,
+  "mode": "proactive",
+  "metrics": {
+    "seq_rtts": [
+      23.0,
+      10.6,
+      10.7,
+      10.5,
+      10.3,
+      10.6,
+      10.6,
+      10.6,
+      10.6,
+      10.2
+    ],
+    "first_packet_rtt_ms": 23.0,
+    "steady_state_rtt_ms": 10.52222222222222,
+    "rtt_min_ms": 10.16,
+    "rtt_avg_ms": 11.768,
+    "rtt_max_ms": 22.993,
+    "packet_loss_percent": 0.0
+  },
+  "user_packet_ins_first_pair": 0,
+  "packet_in_curve": {
+    "host_pairs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "cumulative_user_packet_ins": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pairs_order": [
+      "h1-h4",
+      "h2-h5",
+      "h3-h4",
+      "h1-h2",
+      "h4-h5",
+      "h2-h3",
+      "h1-h5",
+      "h2-h4",
+      "h3-h5",
+      "h1-h3"
+    ]
+  },
+  "flow_entries": {
+    "s1": 10,
+    "s2": 9
+  },
+  "raw_ping_output": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\r\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=64 time=23.0 ms\r\n64 bytes from 10.0.0.4: icmp_seq=2 ttl=64 time=10.6 ms\r\n64 bytes from 10.0.0.4: icmp_seq=3 ttl=64 time=10.7 ms\r\n64 bytes from 10.0.0.4: icmp_seq=4 ttl=64 time=10.5 ms\r\n64 bytes from 10.0.0.4: icmp_seq=5 ttl=64 time=10.3 ms\r\n64 bytes from 10.0.0.4: icmp_seq=6 ttl=64 time=10.6 ms\r\n64 bytes from 10.0.0.4: icmp_seq=7 ttl=64 time=10.6 ms\r\n64 bytes from 10.0.0.4: icmp_seq=8 ttl=64 time=10.6 ms\r\n64 bytes from 10.0.0.4: icmp_seq=9 ttl=64 time=10.6 ms\r\n64 bytes from 10.0.0.4: icmp_seq=10 ttl=64 time=10.2 ms\r\n\r\n--- 10.0.0.4 ping statistics ---\r\n10 packets transmitted, 10 received, 0% packet loss, time 1810ms\r\nrtt min/avg/max/mdev = 10.160/11.768/22.993/3.745 ms\r\n"
+}

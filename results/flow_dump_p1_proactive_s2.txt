@@ -1,0 +1,9 @@
+ cookie=0x0, duration=15.517s, table=0, n_packets=15, n_bytes=1302, priority=10,dl_dst=00:00:00:00:00:01 actions=output:"s2-eth3"
+ cookie=0x0, duration=15.517s, table=0, n_packets=7, n_bytes=518, priority=10,dl_dst=00:00:00:00:00:02 actions=output:"s2-eth3"
+ cookie=0x0, duration=15.517s, table=0, n_packets=6, n_bytes=476, priority=10,dl_dst=00:00:00:00:00:03 actions=output:"s2-eth3"
+ cookie=0x0, duration=15.517s, table=0, n_packets=18, n_bytes=1652, priority=10,dl_dst=00:00:00:00:00:04 actions=output:"s2-eth1"
+ cookie=0x0, duration=15.517s, table=0, n_packets=9, n_bytes=826, priority=10,dl_dst=00:00:00:00:00:05 actions=output:"s2-eth2"
+ cookie=0x0, duration=15.517s, table=0, n_packets=1, n_bytes=42, priority=5,in_port="s2-eth1",dl_dst=ff:ff:ff:ff:ff:ff actions=output:"s2-eth2",output:"s2-eth3"
+ cookie=0x0, duration=15.517s, table=0, n_packets=0, n_bytes=0, priority=5,in_port="s2-eth2",dl_dst=ff:ff:ff:ff:ff:ff actions=output:"s2-eth1",output:"s2-eth3"
+ cookie=0x0, duration=15.517s, table=0, n_packets=9, n_bytes=378, priority=5,in_port="s2-eth3",dl_dst=ff:ff:ff:ff:ff:ff actions=output:"s2-eth1",output:"s2-eth2"
+ cookie=0x0, duration=15.517s, table=0, n_packets=43, n_bytes=11342, priority=0 actions=CONTROLLER:65535
